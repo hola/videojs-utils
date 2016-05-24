@@ -1,15 +1,22 @@
 {
   "name": "videojs-utils",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "description": "Video.JS utility functions",
   "main": "videojs-utils.js",
   "scripts": {
+    "build": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hola/videojs-utils.git"
   },
+  "files": [
+    ".jshintrc",
+    "Gruntfile.js",
+    "src/",
+    "dist/"
+  ],
   "author": "",
   "license": "Apache",
   "devDependencies": {
