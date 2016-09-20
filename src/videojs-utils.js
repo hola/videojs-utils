@@ -11,14 +11,16 @@ function local_storage_init(){
         var reg_ex = new RegExp('(?:^|.*;\\s*)'
         +window.escape(key).replace(/[\-\.\+\*]/g, '\\$&')
         +'\\s*\\=\\s*((?:[^;](?!;))*[^;]?).*');
-        return window.unescape(document.cookie.replace(reg_ex,'$1'));
+        return window.unescape(document.cookie.replace(reg_ex, '$1'));
     }
     function set_cookie_item(key, value, end, path, domain, secure){
         if (!key || /^(?:expires|max\-age|path|domain|secure)$/i.test(key))
             return;
         var expires = '';
-        if (end){
-            switch (end.constructor){
+        if (end)
+        {
+            switch (end.constructor)
+            {
             case Number:
                 expires = end===Infinity
                     ? '; expires=Tue, 19 Jan 2038 03:14:07 GMT'
