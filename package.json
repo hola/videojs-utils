@@ -2,7 +2,7 @@
   "name": "@hola.org/videojs-utils",
   "version": "0.0.1-4",
   "description": "Video.JS utility functions",
-  "main": "dist/videojs-utils.js",
+  "main": "src/videojs-utils.js",
   "scripts": {
     "build": "grunt",
     "login": "c=`npm c ls`; test \"${c#*@hola}\" != \"$c\" || npm login --scope @hola.org",
